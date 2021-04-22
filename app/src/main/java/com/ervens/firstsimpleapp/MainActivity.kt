@@ -21,6 +21,9 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
+    /*
+    Function for changing the color of the drawable resource
+     */
     private fun changeColor() {
         val randomInt = Random.nextInt(4) + 1
         val imageResource = when (randomInt) {
