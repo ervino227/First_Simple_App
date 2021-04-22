@@ -22,11 +22,12 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun changeColor() {
-        val randomInt = Random.nextInt(4) + 1
+        val randomInt = Random.nextInt(5) + 1
         val imageResource = when (randomInt) {
             1 -> R.drawable.blue_shape
             2 -> R.drawable.green_shape
             3 -> R.drawable.red_shape
+            4 -> R.drawable.orange_shape
             else -> R.drawable.yellow_shape
         }
         image.setImageResource(imageResource)
